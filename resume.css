@@ -263,6 +263,8 @@ body{
 #introcol2 a{
   margin:auto;
 }
+
+
 #introcol2 a p{
   text-align: center;
 }
@@ -290,6 +292,11 @@ body{
     display:none;
   }
 }
+@media (max-width:600px){
+  .line1{
+    width: calc(100vw - 150px);
+  }
+}
 #line2{
   font-style: italic;
 }
@@ -306,12 +313,13 @@ p#line2{
 }
 @media (max-width: 576px){
   .line-1{
-    font-size:50px;
+    font-size:40px;
     padding-bottom: 30px;;
   }
 }
 /* Animation */
 @media (min-width: 576px){
+  
   .anim-typewriter{
     animation: typewriter 4s steps(59) 1s 1 normal both,
                blinkTextCursor 500ms steps(44) infinite normal;
@@ -492,14 +500,24 @@ p#line2{
   }
   
   @media(max-width: 600px) {
+    #timeline {
+      overflow-x: hidden;
+    }
     #timeline ul li {
       margin-left: 20px;
+      font-size:12px;
     }
   
     #timeline ul li div {
-      width: calc(100vw - 90px);
+      width: calc(100vw - 150px);
     }
-  
+    #timeline ul li div h3{
+      font-size:16px;
+    }
+    #timeline ul li div h5{
+      font-size:14px;
+      
+    }
     #timeline ul li:nth-child(even) div {
       left: 40px;
     }
@@ -550,7 +568,16 @@ p#line2{
     }
 }
 
-
+@media (max-width: 578px){
+  .cardRow .column{
+    display: flex;
+  }
+  .cardRow .column-details{
+    border-left: none;
+    border-top:none;
+    padding-top:5px;
+}
+}
 /*-------------------skills--------------------------*/
 .skills{
     padding:10% 4% 0%;
