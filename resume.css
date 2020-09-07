@@ -197,7 +197,7 @@ body{
         
     }
 	.menu-wrap .menu > div{
-	height:500vw;
+	height:500vw !important;
 	}
 }
   .menu-wrap .menu > div {
