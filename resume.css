@@ -196,6 +196,9 @@ body{
         width: 100%;
         
     }
+	.menu-wrap .menu > div{
+	height:500vw;
+	}
 }
   .menu-wrap .menu > div {
     background: #c5945c;
