@@ -313,12 +313,12 @@ p#line2{
 /* Animation */
 @media (min-width: 576px){
   .anim-typewriter{
-    animation: typewriter 4s steps(44) 1s 1 normal both,
+    animation: typewriter 4s steps(59) 1s 1 normal both,
                blinkTextCursor 500ms steps(44) infinite normal;
   }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 7.73em;}
+  to{width: 7.84em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -435,7 +435,7 @@ p#line2{
     
     background: #1a1925;
     transition: all 0.5s ease-in-out;
-    visibility: hidden;
+    /* visibility: hidden; */
     opacity: 0;
   }
   #timeline ul li div p{
@@ -591,7 +591,7 @@ p#line2{
     fill: none;
     stroke-width: 2.8;
     stroke-linecap: round;
-    animation: progress 8s ease-out forwards;
+    /* animation: progress 8s ease-out forwards; */
   }
   
   @keyframes progress {
@@ -639,19 +639,20 @@ p#line2{
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
   }
   
-  .progress-bar2,.progress-bar3,.progress-bar4,.progress-bar5{
+  .progress-bar2,.progress-bar3,.progress-bar4,.progress-bar5,.progress-bar6{
     height: 18px;
     border-radius: 30px;
     background-image: 
       linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
     transition: 0.4s linear;  
-    transition-property: width, background-color;    
+    transition-property: width, background-color; 
+    opacity:0;   
   }
   
   .progress-moved .progress-bar2 {
     width: 60%; 
     background-color: #c5945c;  
-    animation: progressAnimation 6s;
+    /* animation: progressAnimation 6s; */
   }
   
   @keyframes progressAnimation {
@@ -662,7 +663,7 @@ p#line2{
   .progress-moved .progress-bar3 {
     width: 70%; 
     background-color: #c5945c;  
-    animation: progressAnimation3 6s;
+    /* animation: progressAnimation3 6s; */
   }
   
   @keyframes progressAnimation3 {
@@ -673,7 +674,7 @@ p#line2{
   .progress-moved .progress-bar4 {
     width: 40%; 
     background-color: #c5945c;  
-    animation: progressAnimation4 6s;
+    /* animation: progressAnimation4 6s; */
   }
   
   @keyframes progressAnimation4 {
@@ -682,14 +683,25 @@ p#line2{
   }
 /*-------5-----------*/
   .progress-moved .progress-bar5 {
-    width: 50%; 
+    width: 85%; 
     background-color: #c5945c;  
-    animation: progressAnimation5 6s;
+    /* animation: progressAnimation5 4s; */
   }
   
   @keyframes progressAnimation5 {
     0%   { width: 5%; background-color: #f1ddc5;}
-    100% { width: 56%; background-color: #c5945c; }
+    100% { width: 85%; background-color: #c5945c; }
+  }
+  /*-------6-----------*/
+  .progress-moved .progress-bar6 {
+    width: 35%; 
+    background-color: #c5945c;  
+    /* animation: progressAnimation6 6s; */
+  }
+  
+  @keyframes progressAnimation6 {
+    0%   { width: 5%; background-color: #f1ddc5;}
+    100% { width: 35%; background-color: #c5945c; }
   }
 
   /*-----------------------------Contact Me-------------------------------*/
