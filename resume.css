@@ -196,10 +196,14 @@ body{
         width: 100%;
         
     }
-	.menu-wrap .menu > div{
-	height:500vw !important;
-	}
 }
+@media (max-width:578px){
+    .menu-wrap .menu > div{
+      height: 400vw;
+      width: 400vw;
+    }
+    
+  }
   .menu-wrap .menu > div {
     background: #c5945c;
     border-radius: 50%;
